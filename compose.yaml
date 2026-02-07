@@ -1,0 +1,8 @@
+services:
+  go_app:
+    image: go-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
